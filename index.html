@@ -45,31 +45,60 @@
       <section class="card" id="git-section">
         
         <h2>Git</h2>
-
+        
         <ul>
-          <li>Git status: checks what branch we are currently on</li>
-          <li>Git checkout -branch-name: creates a new branch and switches to it</li>
-          <li>To save your changes to the main branch:</li>
-            <ul>
-              <li>git add -A</li>
-                <ul>
-                  <li> adds a file as it looks now to your next commit (stage) </li>
-                </ul>
-              <li>git commit -m "your message here"</li>
-                <ul>
-                  <li> commit your staged content as a new commit snapshot </li>
-                </ul>
-              <li>git pull origin main</li>
-                <ul> 
-                  <li> Pull in the base branch (main) to our feature branch </li>
-                </ul>
-              <li>git push origin feature/______</li>
-                <ul> 
-                  <li> Transmits local branch commits to the remote repository branch </li>
-                </ul>
-
-            </ul>
+          Written below are some steps/notes on specific commands taking priority, other less common commands are present in the cheat sheet linked below
+          it is important to note that any quotation marks in the passage below with * are to be replaced by the less/greater-than signs, double quotation marks indicate the use of quotation marks as well as the preceding symbols
         </ul>
+          <ul>
+            <a href="https://education.github.com/git-cheat-sheet-education.pdf">Cheat sheet</a>
+            <li>Git init *"repository name"* is used to start an empty repo or to initialise an existing one in the project root</li>
+            <li>Git commit -m *""commit message""* saves local changes to the branch you are locally working on</li>
+            <li>Git status: checks what branch we are currently on</li>
+            <li>Git checkout *"branch name" switches to a different currently existing branch</li>
+            <li>Git checkout -b *"branch-name"*: creates a new branch and switches to it</li>
+            <li>Git diff: shows the unstaged commands</li>
+            <li>Git pull: fetches the changes from the remote repo and merges any remote changes to the local branch</li>
+            <li>Git add: *"file path"* is used to stage changed files </li>
+            <li>Git branch: lists the branch names available for selection</li>
+            <li>Git push: pushes the committed changes to the remote branch</li>
+              <ul>
+                <li>if the branch is not yet tracked and is only on the local machine run the command like the following</li>
+                  <ul>
+                    <li>git push --set-upstream *"remote branch"* *"branch name"*</li>
+                  </ul>
+              </ul>
+            <li>Git clone: downloads the latest version of a remote project and copies it to the selected location on the local machine</li>
+              <ul>
+                <li>example: git clone *"repository of url"*</li>
+                <li>you can also clone a specific branch by adding in the following command</li>
+                  <ul>
+                    <li>git clone *"repository url"* -b *"branch name"*</li>
+                  </ul>
+              </ul>
+              
+            <li>To save your changes to the main branch:</li>
+              <ul>
+                <li>git add -A</li>
+                  <ul>
+                    <li> adds a file as it looks now to your next commit (stage) </li>
+                  </ul>
+                <li>git commit -m "your message here"</li>
+                  <ul>
+                    <li> commit your staged content as a new commit snapshot </li>
+                  </ul>
+                <li>git pull origin main</li>
+                  <ul> 
+                    <li> Pull in the base branch (main) to our feature branch </li>
+                  </ul>
+                <li>git push origin feature/______</li>
+                  <ul> 
+                    <li> Transmits local branch commits to the remote repository branch </li>
+                  </ul>
+
+              </ul>
+            <li></li>
+          </ul>
       
       </section>
 
